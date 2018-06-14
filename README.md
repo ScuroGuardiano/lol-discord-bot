@@ -5,11 +5,24 @@
 + Check summoner match history
 + Check livegame info
 ## Commands
-* ```.sg-check <summoner nickname>``` - displays info about summoner
-* ```.sg-checkhistory <summoner nickname>``` - displays summoner history
-* ```.sg-checklive <summoner nickname>``` - display summoner live game info
+* ```.sg-check <summoner nickname> <region>``` - displays info about summoner
+* ```.sg-checkhistory <summoner nickname> <region>``` - displays summoner history
+* ```.sg-checklive <summoner nickname> <region>``` - display summoner live game info
+* ```.sg-useregion <region>``` - set default region
 * ```.sg-alias <alias> <command>``` - Allow to assign alias to command  
 For example: ```.sg-alias check sg-check``` will allow to use command .check instead .sg-check
+## Regions
+- eune - Europe Nordic & East
+- euw - Europe West
+- na - North America
+- kr - Korea
+- br - Brazil
+- lan - Latin America North
+- las - Latin America South
+- oce - Oceania
+- ru - Russia
+- tr - Turkey
+- jp - Japan
 ## How to run
 1. Download Node.js from https://nodejs.org/en/
 2. Download this bot  
@@ -21,12 +34,15 @@ For example: ```.sg-alias check sg-check``` will allow to use command .check ins
 3. Create file config.json and write this:
     ```json
         {
-            "riotAPIKey": "<Your riot api key here>"
+            "riotAPIKey": "<Your riot api key here>",
+            "discordBotToken": "<Your Discord Bot Token here>"
         }
     ```
 4. Run:
     ```sh
         npm install
+        npm install -g typescript
+        npm run build
         npm run start
     ```
 

@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test command\" && exit 1",
+    "build": "tsc -p .",
     "start": "node index"
   },
   "repository": {
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/ScuroGuardiano/lol-discord-bot/issues"
   },
-  "homepage": "https://github.com/ScuroGuardiano/lol-discord-bot#readme"
+  "homepage": "https://github.com/ScuroGuardiano/lol-discord-bot#readme",
+  "dependencies": {
+    "@types/node": "^10.3.3",
+    "discord.js": "^11.3.2",
+    "kayn": "^0.8.15"
+  }
 }
