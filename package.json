@@ -1,0 +1,20 @@
+{
+  "name": "discord-lol-bot",
+  "version": "0.0.1",
+  "description": "League of Legends bot for Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test command\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScuroGuardiano/lol-discord-bot.git"
+  },
+  "author": "Scuro Guardiano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ScuroGuardiano/lol-discord-bot/issues"
+  },
+  "homepage": "https://github.com/ScuroGuardiano/lol-discord-bot#readme"
+}
