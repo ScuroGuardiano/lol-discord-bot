@@ -36,12 +36,12 @@ export default class GuardianoCore {
             console.error(err);
             if(err.statusCode === 404)
                 return message.channel.send(`<@${message.author.id}> summoner does not exists`);
-            else return message.channel.send(`<@${message.author.id}> uknown error`);
+            else return message.channel.send(`<@${message.author.id}> unknown error`);
         }
 
         let msg = "# Summoner name: " + summoner.name + '\n';
         msg += "> SoloQ Division: " + summoner.soloQ.tier + ' ' + summoner.soloQ.rank + '\n';
-        msg += "> Flex Division: " + summoner.soloQ.tier + ' ' + summoner.flexSR.rank;
+        msg += "> Flex Division: " + summoner.flexSR.tier + ' ' + summoner.flexSR.rank;
         return message.channel.send('```markdown\n' + msg + '\n```');
     }
     private convertRegion(region: string) {
